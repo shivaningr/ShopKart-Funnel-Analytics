@@ -1,8 +1,8 @@
-\# ShopKart Funnel Analytics
+# ShopKart Funnel Analytics
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -10,7 +10,7 @@ ShopKart India is an e-commerce analytics project focused on understanding custo
 
 
 
-The project uses \*\*MySQL for data cleaning, validation, and business analysis\*\* and \*\*Power BI for interactive data visualization and dashboard development\*\*.
+The project uses **MySQL for data cleaning, validation, and business analysis** and **Power BI for interactive data visualization and dashboard development**.
 
 
 
@@ -18,29 +18,29 @@ The objective is to identify where customers drop off during their purchasing jo
 
 
 
-\## Business Objectives
+## Business Objectives
 
 
 
-\- Analyse customer movement through the e-commerce conversion funnel.
+- Analyse customer movement through the e-commerce conversion funnel.
 
-\- Identify stages with the highest customer drop-offs.
+- Identify stages with the highest customer drop-offs.
 
-\- Evaluate conversion rates across different traffic sources.
+- Evaluate conversion rates across different traffic sources.
 
-\- Compare purchasing behaviour across mobile, desktop, and tablet users.
+- Compare purchasing behaviour across mobile, desktop, and tablet users.
 
-\- Analyse revenue trends, order performance, and average order value.
+- Analyse revenue trends, order performance, and average order value.
 
-\- Identify repeat-purchase patterns and high-value customers.
+- Identify repeat-purchase patterns and high-value customers.
 
-\- Examine product returns, refunds, and delivery performance.
+- Examine product returns, refunds, and delivery performance.
 
-\- Evaluate marketing campaign performance using available campaign metrics.
+- Evaluate marketing campaign performance using available campaign metrics.
 
 
 
-\## Tools \& Technologies
+## Tools & Technologies
 
 
 
@@ -58,15 +58,15 @@ The objective is to identify where customers drop off during their purchasing jo
 
 | Power Query | Not used; data preparation was performed in MySQL |
 
-| Git \& GitHub | Version control and project documentation |
+| Git & GitHub | Version control and project documentation |
 
 
 
-\## Dataset Overview
+## Dataset Overview
 
 
 
-The project contains seven interconnected datasets with \*\*117,519 records\*\*.
+The project contains seven interconnected datasets with **117,519 records**.
 
 
 
@@ -88,11 +88,11 @@ The project contains seven interconnected datasets with \*\*117,519 records\*\*.
 
 | Marketing Campaigns | 80 |
 
-| \*\*Total\*\* | \*\*117,519\*\* |
+| **Total** | **117,519** |
 
 
 
-\## Data Cleaning \& Preparation
+## Data Cleaning & Preparation
 
 
 
@@ -104,39 +104,39 @@ Key activities included:
 
 
 
-\- Identifying and handling invalid customer age values.
+- Identifying and handling invalid customer age values.
 
-\- Standardising inconsistent product category values.
+- Standardising inconsistent product category values.
 
-\- Handling missing session dates, durations, and discount percentages.
+- Handling missing session dates, durations, and discount percentages.
 
-\- Correcting date formats in marketing campaign data.
+- Correcting date formats in marketing campaign data.
 
-\- Reviewing repeated session identifiers and preserving distinct session records.
+- Reviewing repeated session identifiers and preserving distinct session records.
 
-\- Validating order statuses and delivery dates.
+- Validating order statuses and delivery dates.
 
-\- Checking data consistency and relationships across datasets.
+- Checking data consistency and relationships across datasets.
 
-\- Using appropriate data types for identifiers, dates, and numerical fields.
-
-
-
-\### Important Data Quality Decisions
+- Using appropriate data types for identifiers, dates, and numerical fields.
 
 
 
-\- Invalid customer ages were replaced with NULL rather than assigning assumed values.
-
-\- Missing values were retained as NULL where appropriate.
-
-\- Repeated session IDs were investigated because they represented distinct sessions rather than duplicate records.
-
-\- Phone numbers were treated as text to preserve formatting and potential leading zeros.
+### Important Data Quality Decisions
 
 
 
-\## Data Model \& Relationships
+- Invalid customer ages were replaced with NULL rather than assigning assumed values.
+
+- Missing values were retained as NULL where appropriate.
+
+- Repeated session IDs were investigated because they represented distinct sessions rather than duplicate records.
+
+- Phone numbers were treated as text to preserve formatting and potential leading zeros.
+
+
+
+## Data Model & Relationships
 
 
 
@@ -148,21 +148,21 @@ Key modelling decisions:
 
 
 
-\- Customer information connects to sessions and orders.
+- Customer information connects to sessions and orders.
 
-\- Product information connects to orders.
+- Product information connects to orders.
 
-\- Session events connect to sessions.
+- Session events connect to sessions.
 
-\- Returns connect to orders through a one-to-one relationship.
+- Returns connect to orders through a one-to-one relationship.
 
-\- The Sessions-to-Orders relationship was kept inactive to avoid ambiguous filter paths.
+- The Sessions-to-Orders relationship was kept inactive to avoid ambiguous filter paths.
 
-\- Marketing campaign data remained disconnected because no reliable campaign-to-order linking key was available.
+- Marketing campaign data remained disconnected because no reliable campaign-to-order linking key was available.
 
 
 
-\## SQL Analysis
+## SQL Analysis
 
 
 
@@ -174,29 +174,29 @@ Key analysis areas:
 
 
 
-1\. Overall sales and revenue performance.
+1. Overall sales and revenue performance.
 
-2\. Revenue associated with cancelled orders.
+2. Revenue associated with cancelled orders.
 
-3\. Monthly revenue trends and growth.
+3. Monthly revenue trends and growth.
 
-4\. Repeat-purchase behaviour.
+4. Repeat-purchase behaviour.
 
-5\. Customer revenue contribution and high-value customers.
+5. Customer revenue contribution and high-value customers.
 
-6\. Customer conversion funnel and stage-wise drop-offs.
+6. Customer conversion funnel and stage-wise drop-offs.
 
-7\. Traffic-source performance.
+7. Traffic-source performance.
 
-8\. Device-wise conversion and revenue analysis.
+8. Device-wise conversion and revenue analysis.
 
-9\. Marketing campaign performance.
+9. Marketing campaign performance.
 
-10\. Average delivery time and delivery performance.
+10. Average delivery time and delivery performance.
 
 
 
-\## Key Business Metrics
+## Key Business Metrics
 
 
 
@@ -226,11 +226,11 @@ Key analysis areas:
 
 
 
-\*\*Note:\*\* Customer conversion rate, session conversion rate, and funnel completion rate use different denominators and represent different stages of business performance.
+**Note:** Customer conversion rate, session conversion rate, and funnel completion rate use different denominators and represent different stages of business performance.
 
 
 
-\## E-commerce Conversion Funnel
+## E-commerce Conversion Funnel
 
 
 
@@ -238,7 +238,7 @@ The customer journey was analysed across seven stages:
 
 
 
-\*\*Home → Search → Product View → Add to Cart → Checkout → Payment → Order Completed\*\*
+**Home → Search → Product View → Add to Cart → Checkout → Payment → Order Completed**
 
 
 
@@ -262,7 +262,7 @@ The customer journey was analysed across seven stages:
 
 
 
-\*\*Overall Funnel Completion Rate: 37.31%\*\*
+**Overall Funnel Completion Rate: 37.31%**
 
 
 
@@ -274,11 +274,11 @@ This indicates an opportunity to investigate product-page experience, pricing, p
 
 
 
-\## Key Business Insights
+## Key Business Insights
 
 
 
-\### 1. Traffic Source Performance
+### 1. Traffic Source Performance
 
 
 
@@ -290,11 +290,11 @@ Google Ads generated substantial traffic but had a lower session conversion rate
 
 
 
-\*\*Business implication:\*\* Further investigation of paid advertising targeting and landing-page performance could help improve conversion efficiency.
+**Business implication:** Further investigation of paid advertising targeting and landing-page performance could help improve conversion efficiency.
 
 
 
-\### 2. Device Performance
+### 2. Device Performance
 
 
 
@@ -314,11 +314,11 @@ Mobile accounted for the largest share of sessions, while desktop had the highes
 
 
 
-\*\*Business implication:\*\* Improving the mobile shopping experience could help address the conversion gap.
+**Business implication:** Improving the mobile shopping experience could help address the conversion gap.
 
 
 
-\### 3. Repeat Purchase Behaviour
+### 3. Repeat Purchase Behaviour
 
 
 
@@ -326,11 +326,11 @@ Among the 3,759 customers who placed orders:
 
 
 
-\- 46.32% placed one order.
+- 46.32% placed one order.
 
-\- 30.99% placed two orders.
+- 30.99% placed two orders.
 
-\- 22.69% placed three or more orders.
+- 22.69% placed three or more orders.
 
 
 
@@ -338,11 +338,11 @@ Approximately 53.68% of ordering customers placed at least two orders.
 
 
 
-\*\*Business implication:\*\* Customer engagement and retention initiatives could help encourage additional purchases.
+**Business implication:** Customer engagement and retention initiatives could help encourage additional purchases.
 
 
 
-\### 4. Revenue Performance
+### 4. Revenue Performance
 
 
 
@@ -354,7 +354,7 @@ Revenue analysis was performed across monthly trends, order statuses, product ca
 
 
 
-\### 5. Returns \& Refunds
+### 5. Returns & Refunds
 
 
 
@@ -366,11 +366,11 @@ Size-related issues generated the highest refund amount, approximately ₹17.1 l
 
 
 
-\*\*Business implication:\*\* Improving product sizing information and size guides could help reduce size-related returns.
+**Business implication:** Improving product sizing information and size guides could help reduce size-related returns.
 
 
 
-\### 6. Delivery Performance
+### 6. Delivery Performance
 
 
 
@@ -382,7 +382,7 @@ Delivery duration was calculated using the difference between order date and del
 
 
 
-\## Power BI Dashboard
+## Power BI Dashboard
 
 
 
@@ -390,7 +390,7 @@ The Power BI report contains two main analytical pages.
 
 
 
-\### Page 1: Funnel \& Acquisition Analysis
+### Page 1: Funnel & Acquisition Analysis
 
 
 
@@ -400,25 +400,25 @@ Focuses on customer acquisition and conversion performance.
 
 Key components:
 
-\- Total Sessions
+- Total Sessions
 
-\- Sessions With Orders
+- Sessions With Orders
 
-\- Session Conversion Rate
+- Session Conversion Rate
 
-\- Seven-stage conversion funnel
+- Seven-stage conversion funnel
 
-\- Sessions by traffic source
+- Sessions by traffic source
 
-\- Conversion rate by traffic source
+- Conversion rate by traffic source
 
-\- Revenue by traffic source
+- Revenue by traffic source
 
-\- Date and traffic-source slicers
+- Date and traffic-source slicers
 
 
 
-\### Page 2: Revenue \& Order Analysis
+### Page 2: Revenue & Order Analysis
 
 
 
@@ -428,55 +428,55 @@ Focuses on sales performance and order-related insights.
 
 Key components:
 
-\- Total Revenue
+- Total Revenue
 
-\- Total Orders
+- Total Orders
 
-\- Average Order Value
+- Average Order Value
 
-\- Total Quantity Sold
+- Total Quantity Sold
 
-\- Monthly revenue trend
+- Monthly revenue trend
 
-\- Order status distribution
+- Order status distribution
 
-\- Revenue by product category
+- Revenue by product category
 
-\- Top 10 products
+- Top 10 products
 
-\- Refund amount by return reason
+- Refund amount by return reason
 
-\- Date and category slicers
+- Date and category slicers
 
 
 
-\## Repository Structure
+## Repository Structure
 
 
 
 ```text
 
-ShopKart-Funnel-Analytics/
+ShopKart-Funnel-Analytics
 
 │
 
-├── Dashboard\_Screenshots/
+├── Dashboard_Screenshots
 
-│   ├── 01\_Funnel analysis.png
+│   ├── 01_Funnel analysis.png
 
-│   └── 02\_Revenue \& orders analysis.png
-
-│
-
-├── PowerBI/
-
-│   └── shopkart\_funnel.pbix
+│   └── 02_Revenue & orders analysis.png
 
 │
 
-├── SQL/
+├── PowerBI
 
-│   └── Revenue\_analysis.sql
+│   └── shopkart_funnel.pbix
+
+│
+
+├── SQL
+
+│   └── Revenue_analysis.sql
 
 │
 
@@ -486,7 +486,7 @@ ShopKart-Funnel-Analytics/
 
 
 
-\## Business Recommendations
+## Business Recommendations
 
 
 
@@ -494,39 +494,39 @@ Based on the analysis:
 
 
 
-1\. Investigate the Product View to Add to Cart drop-off to identify potential barriers to purchasing.
+1. Investigate the Product View to Add to Cart drop-off to identify potential barriers to purchasing.
 
-2\. Review Google Ads targeting and campaign landing pages to improve conversion efficiency.
+2. Review Google Ads targeting and campaign landing pages to improve conversion efficiency.
 
-3\. Prioritise mobile shopping experience improvements because mobile generates the highest traffic.
+3. Prioritise mobile shopping experience improvements because mobile generates the highest traffic.
 
-4\. Encourage repeat purchases through customer engagement and retention initiatives.
+4. Encourage repeat purchases through customer engagement and retention initiatives.
 
-5\. Investigate size-related product returns and improve product descriptions and sizing information.
+5. Investigate size-related product returns and improve product descriptions and sizing information.
 
-6\. Monitor delivery performance to identify opportunities for improving fulfilment efficiency.
-
-
-
-\## Important Analytical Considerations
+6. Monitor delivery performance to identify opportunities for improving fulfilment efficiency.
 
 
 
-\- Customer conversion rate (74.07%) measures customers with orders against total customers.
-
-\- Session conversion rate (35%) measures sessions with orders against total sessions.
-
-\- Funnel completion rate (37.31%) measures completed-order events against Home-stage sessions.
-
-\- Revenue associated with cancelled orders is not equivalent to realised financial loss.
-
-\- Marketing campaign metrics were calculated using available impressions, clicks, conversions, and campaign costs. ROAS was not calculated because reliable campaign-to-order revenue linkage was unavailable.
-
-\- The analysis identifies patterns and associations; it does not establish causation.
+## Important Analytical Considerations
 
 
 
-\## Conclusion
+- Customer conversion rate (74.07%) measures customers with orders against total customers.
+
+- Session conversion rate (35%) measures sessions with orders against total sessions.
+
+- Funnel completion rate (37.31%) measures completed-order events against Home-stage sessions.
+
+- Revenue associated with cancelled orders is not equivalent to realised financial loss.
+
+- Marketing campaign metrics were calculated using available impressions, clicks, conversions, and campaign costs. ROAS was not calculated because reliable campaign-to-order revenue linkage was unavailable.
+
+- The analysis identifies patterns and associations; it does not establish causation.
+
+
+
+## Conclusion
 
 
 
